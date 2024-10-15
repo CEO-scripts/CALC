@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+img{
+    width: 20px;
+    height: 25px;
+}
+
+#calc_body{
+    background-color: rgb(22, 22, 22);
+    position: absolute;
+    left: 600px;
+    top: 80px;
+    max-height: 100vh;
+}
+
+span{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+}
+
+#top #left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px 15px;
+    gap: 10em;
+    border-bottom: 1px rgb(150, 149, 149) solid;
+}
+
+#top #right{
+    display: flex;
+    align-items: end;
+    position: relative;
+    left: 15px;   
+}
+
+#right button{
+    background-color: transparent;
+    border: none;
+    padding: 5px 20px;
+    color: rgb(165, 162, 162);
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#right button:hover{
+    background-color: rgb(109, 109, 109);
+    color: rgba(255, 255, 255, 0.966);
+}
+
+#right button:active{
+    background-color: rgba(109, 109, 109, 0.63);
+    color: rgba(255, 255, 255, 0.801);
+}
+
+#right #cancel:hover{
+    background-color: red;
+}
+
+#right #cancel:active{
+    background-color: rgba(255, 0, 0, 0.678);
+}
+
+.textfield{
+    width: 95%;
+    height: 90px;
+    border: none;
+    margin: 10px 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:xxx-large;
+    font-weight: 500;
+    text-align: end;
+}
+
+
+#btn-container button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 7px;
+    width: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(85, 84, 84);
+    color:white;
+}
+
+#btn-container button:hover{
+    background-color: rgb(70, 69, 69);
+}
+
+#btn-container button:active{
+    background-color: rgb(61, 61, 61);
+    color: rgb(114, 114, 114);
+}
+
+#btn-container .btn{
+    background-color: rgb(70, 69, 69);
+}
+
+#btn-container .btn:hover{
+    background-color: rgb(85, 84, 84);
+}
+
+#btn-container .btn:active{
+    background-color: rgb(61, 61, 61);
+    color: rgb(114, 114, 114);
+}
+
+#btn-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 5px;
+    align-items: center;   
+}
+
+#btn-container #equals{
+    color: black;
+    background-color: burlywood;
+}
+#btn-container #equals:hover{
+    background-color: tan;
+}
+
+#btn-container #equals:active{
+    background-color: rgb(202, 169, 126);
+    color: rgb(102, 102, 102);
+}
+
+sup{
+    font-size: 10px;
+}
+
+::placeholder{
+    color: white;
+}

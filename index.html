@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+    <div id = "calc_body">
+        <div id = "top">
+            <div id="left">
+                <img src="images.png" alt=""><span>Calculator</span>
+            </div>
+            <div id = "right">
+                <button type="button">-</button>
+                <button type="button"><i class="fas fa-expand"></i></button>
+                <button type="button" id = "cancel">&times;</button>
+            </div>
+        </div>
+        <input type="text" name="text" class = "textfield" id="textfield" placeholder="0" disabled>
+        <div id="btn-container">
+        <button type="button" class="btn" onclick="calcPercent()">%</button>
+        <button type="button" class="btn" onclick="calcSquare()">x<sup>2</sup></button>
+        <button type="button" class="btn" onclick="clearAll()">C</button>
+        <button type="button" class="btn" onclick="del()"><i class="fas fa-backspace"></i></button>
+        <button type="button" class="btn" onclick="calcSquareRoot()">&radic;</button>
+        <button type="button" class="btn" onclick="display('(')">&lpar;</button> 
+        <button type="button" class="btn" onclick="display(')')">&rpar;</button>
+        <button type="button" class="btn" onclick="display('/')">&divide;</button>
+        <button type="button" onclick="display('7')">7</button>
+        <button type="button" onclick="display('8')">8</button>  
+        <button type="button" onclick="display('9')">9</button>
+        <button type="button" class="btn" onclick="display('*')">&times;</button>
+        <button type="button" onclick="display('4')">4</button> 
+        <button type="button" onclick="display('5')">5</button>
+        <button type="button" onclick="display('6')">6</button>
+        <button type="button" class="btn" onclick="display('-')">&minus;</button>
+        <button type="button" onclick="display('1')">1</button>
+        <button type="button" onclick="display('2')">2</button>
+        <button type="button" onclick="display('3')">3</button>
+        <button type="button" class="btn" onclick="display('+')">&plus;</button>
+        <button type="button" onclick="display('0')">0</button>
+        <button type="button" onclick="display('00')">00</button>
+        <button type="button" onclick="display('.')">.</button>
+        <button type="button" class="btn" id="equals" onclick="calculate()">&equals;</button>
+        <script src="script.js"></script>    
+        </div>
+    </div>
